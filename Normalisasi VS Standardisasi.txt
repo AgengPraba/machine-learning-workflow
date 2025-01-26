@@ -1,0 +1,25 @@
+Normalisasi VS Standarisasi
+
+Normalisasi
+Normalisasi (juga dikenal sebagai penskalaan min-max) bertugas untuk mengubah fitur sehingga nilainya berada dalam rentang tertentu, biasanya antara 0 dan 1.
+
+Berikut poin-poin yang menjadi pertimbangan ketika akan melakukan normalisasi.
+
+Fitur dengan Skala Berbeda: ketika fitur memiliki skala yang sangat berbeda dan Anda ingin menyamakan rentangnya.
+
+Model Berbasis Jarak: jika Anda menggunakan algoritma yang bergantung pada jarak, seperti K-Nearest Neighbors (KNN) atau K-Means clustering, normalisasi dapat membantu karena model ini sensitif terhadap skala fitur.
+
+Data Tidak Terdistribusi Normal: jika data tidak terdistribusi normal dan Anda ingin mengubah data menjadi rentang yang lebih seragam.
+
+Standardisasi
+Standardisasi (juga dikenal sebagai penskalaan Z-score) bertugas untuk mengubah skala pada suatu fitur sehingga memiliki rata-rata 0 dan standar deviasi 1.
+
+Berikut poin-poin yang menjadi pertimbangan ketika akan melakukan standardisasi.
+
+Data Berdistribusi Normal: ketika data mengikuti distribusi normal (atau mendekati normal) dan Anda ingin mempertahankan informasi tentang distribusi data.
+Model Berbasis Regresi: untuk algoritma yang memerlukan asumsi distribusi normal atau model linier seperti Regresi Linier, Standar, atau Logistic Regression.
+Data dengan Skala Berbeda: ketika fitur memiliki skala yang berbeda tetapi Anda ingin memastikan bahwa setiap fitur berkontribusi secara proporsional tanpa mengubah distribusi data secara signifikan.
+Jika kita tarik benang merah perbedaan dari standardisasi dengan normalisasi hanya pada rentangnya.
+
+Normalisasi: mengubah data ke dalam rentang [0, 1]. Ideal untuk model berbasis jarak dan data yang tidak terdistribusi normal.
+Standardisasi: mengubah data sehingga rata-rata menjadi atau mendekati 0 dan standar deviasi menjadi 1. Hal ini membantu model yang memerlukan distribusi normal atau data dengan skala berbeda menjadi lebih ideal pada proses pelatihannya.
